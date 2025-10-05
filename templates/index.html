@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <h2>Welcome to the Python Project!</h2>
+    <p>This is the homepage for the web application built with **Flask** and featuring image CAPTCHA verification for registration.</p>
+    <p>Please use the navigation bar to proceed to **Login** or **Register**.</p>
+    <div class="links">
+        <a href="{{ url_for('login') }}" class="button primary">Go to Login</a>
+        <a href="{{ url_for('register') }}" class="button secondary">Go to Register</a>
+    </div>
+{% endblock %}
